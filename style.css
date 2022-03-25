@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-size: 15px;
+}
+
+
+/* header*/
+#header {
+    background-image: linear-gradient(to right, red, yellow);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+     
+}
+
+/* form */
+form {
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1rem;
+    padding: 1rem 0 1rem 0;
+    height: 100%;
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    background-position: contain;
+}
+
+#title,
+#description {
+    padding: 0.5rem;
+    width: 20rem;
+    margin: 1rem 0 1rem 0;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+#title {
+    height: 1.5rem;
+}
+
+#description {
+    height: 2rem;
+}
+
+.button,
+.clearButton {
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    width: 8rem;
+    height: 2rem;
+    border: none;
+    border-radius: 1rem;
+
+}
+
+.button:hover,
+.clearButton:hover {
+    cursor: pointer;
+    background-image: none;
+}
+
+.button {
+    margin-right: 1rem;
+}
+
+.clearButton {
+    margin-left: 1rem;
+}
+
+.buttons {
+    display: flex;
+
+    justify-content: center;
+
+}
+
+/* todoItems Container*/
+.todoItemsContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    padding-top: 1rem;
+    height: 100%;
+
+}
+
+.todoElement,
+.editContainer {
+    width: 20%;
+    padding: 1rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem 1rem 1rem 1rem;
+    align-items: center;
+    background-color: #ff4e00;
+    background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+
+    border-radius: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 100%;
+  
+
+}
+
+.editButton,
+.removeButton,
+.saveChanges {
+    width: 80%;
+    margin-top: 1rem;
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    border-radius: 1rem;
+    height: 2rem;
+
+}
+
+.editButton:hover,
+.removeButton:hover,
+.saveChanges:hover {
+    cursor: pointer;
+    background-image: none;
+
+}
+
+
+
+.taskTitle {
+    background-color: white;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem 0 0.2rem 0;
+    border-radius: 0.2rem;
+}
+
+.taskDescription {
+   
+    background-color: white;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem 0 0.2rem 0;
+    border-radius: 0.2rem;
+    height: 100%;
+    margin-top:1rem;
+   
+}
+
+.checkbox-elements{
+    color: lightgrey;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+#checkbox{
+    transform: scale(2);
+    height: 10px;
+    margin-right: 0.5rem;
+}
+
+
+/* Mobile and Tab layout*/
+@media (max-width: 700px){
+    .todoItemsContainer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: none;
+        flex-flow: none;
+        height: 100%;
+    }
+
+    .todoElement,.editContainer{
+        width:80%;
+    }
+}
